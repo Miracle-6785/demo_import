@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: importthere
+  description: Backstage component for importthere
+  annotations:
+    github.com/project-slug: Miracle-6785/demo_import
+    jenkins.io/job-full-name: importthere-org/importthere-job
+    sonarqube.org/project-key: default/importthere
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-template: template:default/register-new-application
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
