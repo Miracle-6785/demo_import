@@ -4,6 +4,7 @@ metadata:
   name: iapdemo149
   description: Backstage component for iapdemo149
   annotations:
+    dependencytrack/project-id: "8cbfc056-6b4d-4565-b5a3-70fc38fadc3d"
     iap/app-info: "1/5dbadea8-3d7a-4728-aef1-f859dad899a3"
     github.com/project-slug: Miracle-6785/demo_import
     jenkins.io/job-full-name: iapdemo149-org/iapdemo149-job
