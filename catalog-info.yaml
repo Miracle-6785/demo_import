@@ -4,6 +4,7 @@ metadata:
   name: importthere
   description: Backstage component for importthere
   annotations:
+    dependencytrack/project-id: "24dd8527-859f-4848-8b98-3495168d65f3"
     iap/app-info: "1/8a2e29c4-c6ac-4991-854b-1fe18d3a172c"
     github.com/project-slug: Miracle-6785/demo_import
     jenkins.io/job-full-name: importthere-org/importthere-job
