@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: importRepo
+  description: Backstage component for importRepo
+  annotations:
+    github.com/project-slug: Miracle-6785/demo_import
+    jenkins.io/job-full-name: importRepo-org/importRepo-job
+    sonarqube.org/project-key: default/importRepo
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-template: template:default/register-new-application
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
