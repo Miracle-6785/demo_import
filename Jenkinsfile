@@ -11,14 +11,14 @@ pipeline {
         IS_USING_DEPENDENCY_TRACK = "true"
         IAP_ANNOTATION = "iap/app-info"
         DEPENDENCY_TRACK_ANNOTATION = "dependencytrack/project-id"
-        APP_NAME = "importRepo"
-        BUCKET_NAME = "importRepo-s3-bucket".toLowerCase()
+        APP_NAME = "importHere"
+        BUCKET_NAME = "importHere-s3-bucket".toLowerCase()
         AWS_REGION = "ap-southeast-1"
         IAP_BACKEND_URL = "https://iap.da-icy.social"
         IAP_PROJECT_ID = "1"
         API_URL = "${IAP_BACKEND_URL}/1/applications"
         SCANNER_HOME = tool 'SonarScanner'
-        SONAR_PROJECT_KEY = "importRepo"
+        SONAR_PROJECT_KEY = "importHere"
         SONAR_BASE_URL = "https://sonar.da-icy.social"
         DEPENDENCE_BASE_URL = "https://dtrack-be.da-icy.social"
         BACKSTAGE_BE_BASE_URL = "https://backstage-be.da-icy.social"
@@ -313,6 +313,16 @@ def commitAndPushChanges(commitMessage) {
             sh """
             git config --global user.email "miracleiztb@gmail.com"
             git config --global user.name "Miracle"
+
+            # Ensure we are on the main branch
+            git checkout main
+
+            # Fetch latest changes
+            git fetch origin main
+
+            # Pull latest changes and rebase
+            git pull --rebase origin main
+            
             git add ${FILE_PATH}
             git commit -m "[ci skip] ${commitMessage}"
             git push https://${GIT_USER}:${GIT_PASS}@${repoUrl.replace('https://', '')} HEAD:main

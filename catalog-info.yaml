@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: importRepo
-  description: Backstage component for importRepo
+  name: importHere
+  description: Backstage component for importHere
   annotations:
-    dependencytrack/project-id: "0632db6b-ad11-4b2b-aef5-9bedc3bdd69a"
-    iap/app-info: "1/48a3b57b-38a1-4470-95aa-5c1489fcd243"
     github.com/project-slug: Miracle-6785/demo_import
-    jenkins.io/job-full-name: importRepo-org/importRepo-job
-    sonarqube.org/project-key: default/importRepo
+    jenkins.io/job-full-name: importHere-org/importHere-job
+    sonarqube.org/project-key: default/importHere
     backstage.io/techdocs-ref: dir:.
     backstage.io/source-template: template:default/register-new-application
 spec:
