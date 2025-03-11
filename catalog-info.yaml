@@ -4,6 +4,7 @@ metadata:
   name: importthere
   description: Backstage component for importthere
   annotations:
+    iap/app-info: "1/8a2e29c4-c6ac-4991-854b-1fe18d3a172c"
     github.com/project-slug: Miracle-6785/demo_import
     jenkins.io/job-full-name: importthere-org/importthere-job
     sonarqube.org/project-key: default/importthere
